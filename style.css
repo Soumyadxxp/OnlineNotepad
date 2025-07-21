@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: white;
+  transition: background 0.3s, color 0.3s;
+}
+
+#crafted {
+  position: fixed;
+  top: 8px;
+  right: 16px;
+  font-size: 13px;
+  font-weight: 500;
+  font-style: italic;
+  color: #444;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 4px 10px;
+  border-radius: 8px;
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+body.dark #crafted {
+  color: #ddd;
+  background: rgba(30, 30, 30, 0.6);
+  box-shadow: 0 1px 3px rgba(255,255,255,0.1);
+}
+
+#tabs {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  background: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  gap: 6px;
+}
+
+#tabList {
+  display: flex;
+  gap: 6px;
+}
+
+.tab {
+  background: white;
+  border: 1px solid #aaa;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tab:hover {
+  background: #eee;
+}
+
+.tab.active {
+  background: #0078d7;
+  color: white;
+}
+
+.close-tab {
+  font-weight: bold;
+  color: red;
+  cursor: pointer;
+}
+
+.tab:hover .close-tab {
+  color: darkred;
+}
+
+#tools, #findReplace {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 10px;
+  background: #fafafa;
+  border-bottom: 1px solid #ccc;
+}
+
+select, input[type="color"] {
+  padding: 4px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  flex-grow: 1;
+  padding: 12px;
+  font-size: 14px;
+  font-family: Consolas, monospace;
+  border: none;
+  resize: none;
+  outline: none;
+  width: 100%;
+}
+
+.btn {
+  padding: 6px 12px;
+  background: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #005fa3;
+}
+
+.btn.small {
+  padding: 4px 8px;
+  font-size: 13px;
+}
+
+.btn.primary {
+  background: #28a745;
+}
+
+.btn.primary:hover {
+  background: #218838;
+}
+
+/* Dark Mode */
+body.dark {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+body.dark #tabs,
+body.dark #tools,
+body.dark #findReplace {
+  background: #2b2b2b;
+}
+
+body.dark .tab {
+  background: #444;
+  color: white;
+}
+
+body.dark .tab.active {
+  background: #0078d7;
+}
+
+body.dark textarea {
+  background: #2a2a2a;
+  color: #eee;
+}
