@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Notepad</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="crafted">Crafted with ❤️ by Soumyadeep Basu</div>
+
+  <div id="tabs">
+    <button class="btn primary" onclick="addTab()">+ New Tab</button>
+    <div id="tabList"></div>
+  </div>
+
+  <div id="tools">
+    <button class="btn" onclick="toggleDarkMode()">🌓 Theme</button>
+
+    <select id="fontSelect" onchange="changeFont()">
+      <option value="Consolas">Consolas</option>
+      <option value="Arial">Arial</option>
+      <option value="Courier New">Courier New</option>
+      <option value="Verdana">Verdana</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Tahoma">Tahoma</option>
+      <option value="Segoe UI">Segoe UI</option>
+      <option value="Roboto">Roboto</option>
+    </select>
+
+    <select id="fontSize" onchange="changeFontSize()">
+      <option value="12px">12px</option>
+      <option value="14px" selected>14px</option>
+      <option value="16px">16px</option>
+      <option value="18px">18px</option>
+      <option value="20px">20px</option>
+    </select>
+
+    <input type="color" id="fontColor" title="Font Color" onchange="changeFontColor()" />
+
+    <label><input type="checkbox" id="spellCheckToggle" onchange="toggleSpellCheck()" checked /> Spell Check</label>
+
+    <button class="btn" onclick="printContent()">🖨 Print</button>
+    <button class="btn" onclick="exportToPDF()">📄 Export</button>
+
+    <span id="counter">Words: 0 | Characters: 0</span>
+  </div>
+
+  <div id="findReplace">
+    <input type="text" id="findText" placeholder="Find" />
+    <input type="text" id="replaceText" placeholder="Replace" />
+    <button class="btn small" onclick="findText()">Find</button>
+    <button class="btn small" onclick="replaceText()">Replace</button>
+  </div>
+
+  <textarea id="editor" spellcheck="true" placeholder="Start typing..."></textarea>
+
+  <script src="script.js"></script>
+</body>
+</html>
