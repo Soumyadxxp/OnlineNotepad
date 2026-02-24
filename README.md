@@ -10,12 +10,9 @@ An elegant and lightweight web-based notepad built with **HTML**, **CSS**, and *
 - 📁 **Multiple Tabs** for organizing notes
 - 🔍 **Find and Replace** functionality
 - 🎨 **Custom Fonts**, **Font Sizes**, and **Colors**
-- 💾 **Auto-Save** notes to Local Storage
 - 📜 **Word & Character Count**
 - 🖨️ **Print and Export** support (PDF)
-- 📂 **Drag-and-Drop** file import
 - 🧠 **Spell Check** enabled
-- 🖼️ **Preview Thumbnails** for supported file types
 - 📓 Clean, responsive design optimized for productivity
 
 ---
