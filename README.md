@@ -12,7 +12,6 @@ An elegant and lightweight web-based notepad built with **HTML**, **CSS**, and *
 - 🎨 **Custom Fonts**, **Font Sizes**, and **Colors**
 - 📜 **Word & Character Count**
 - 🖨️ **Print and Export** support (PDF)
-- 🧠 **Spell Check** enabled
 - 📓 Clean, responsive design optimized for productivity
 
 ---
